@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>My blog</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body>
+    @@include('blocks/header.html')
+    <main class="font container">
+        <section class="section_blog">
+            <h1 class="title title_blog">My blog</h1>
+
+            <form name="searchForm" class="search">
+                <fieldset class="tags">
+                    <legend class="title__list">Tags</legend>
+                    <ul class="tags__list undotted">
+                        <li>
+                            <label class="">
+                                <input type="checkbox" class="checkbox1__input_tags" name="tags" value="blue" checked>                                
+                                <span class="checkbox__span_tags1"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="">
+                                <input type="checkbox" class="checkbox2__input_tags" name="tags" value="lightblue">
+                                <span class="checkbox__span_tags2"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="">
+                                <input type="checkbox" class="checkbox3__input_tags" name="tags" value="yellow">
+                                <span class="checkbox__span_tags3"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="">
+                                <input type="checkbox" class="checkbox4__input_tags" name="tags" value="turquoise">
+                                <span class="checkbox__span_tags4"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="">
+                                <input type="checkbox" class="checkbox5__input_tags" name="tags" value="orange">
+                                <span class="checkbox__span_tags5"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="">
+                                <input type="checkbox" class="checkbox6__input_tags" checked name="tags" value="pink">
+                                <span class="checkbox__span_tags6"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="">
+                                <input type="checkbox" class="checkbox7__input_tags" name="tags" value="puple">
+                                <span class="checkbox__span_tags7"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="">
+                                <input type="checkbox" class="checkbox8__input_tags" name="tags" value="green">
+                                <span class="checkbox__span_tags8"></span>
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+    
+                <fieldset class="views">
+                    <legend class="title__list">Views</legend>
+                    <ul class="views_list undotted title__list_span">
+                        <li>
+                            <label>
+                                <input type="radio" class="views__radio_input" name="views" value="500">
+                                <span class="views__radio_span">100-500</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" class="views__radio_input" name="views" value="1000" checked>
+                                <span class="views__radio_span">500-1000</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" class="views__radio_input" name="views" value="2000">
+                                <span class="views__radio_span">1000-2000</span>
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset>
+                    <legend class="title__list">Comments</legend>
+                    <ul class="undotted comments_list title__list_span">
+                        <li>
+                            <label>
+                                <input type="checkbox" class="checkbox__input_comments" name="comments" value="0" checked>
+                                <span class="checkbox__span_comments">0</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" class="checkbox__input_comments" name="comments" value="10">
+                                <span class="checkbox__span_comments">0-10</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" class="checkbox__input_comments" name="comments" value="50">
+                                <span class="checkbox__span_comments">10-50</span>
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset>
+                    <legend class="title__list">How show?</legend>
+                    <ul class="views_list title__list_span undotted">
+                        <li>
+                            <label>
+                                <input type="radio" class="views__radio_input" name="show" value="show5" checked>
+                                <span class="views__radio_span">show 5</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" class="views__radio_input" name="show" value="show10">
+                                <span class="views__radio_span">show 10</span>
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset>
+                    <legend class="title__list">Sort by</legend>
+                    <ul class="views_list title__list_span undotted">
+                        <li>
+                            <label>
+                                <input type="radio" class="views__radio_input" name="sort" value="date" checked>
+                                <span class="views__radio_span">date</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" class="views__radio_input" value="title" name="sort">
+                                <span class="views__radio_span">title</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" class="views__radio_input" name="sort" value="views">
+                                <span class="views__radio_span">views</span>
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <button type="submit" class="button_search">Apply</button>
+            </form>
+
+
+            <form name="searchForm1080px" class="search1080px">
+                <fieldset class="views">
+                    <legend class="title__list">Views</legend>
+                    <ul class="views_list undotted title__list_span">
+                        <li>
+                            <label>
+                                <input type="radio" class="views__radio_input" name="views" value="500">
+                                <span class="views__radio_span">100-500</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" class="views__radio_input" name="views" value="1000" checked>
+                                <span class="views__radio_span">500-1000</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" class="views__radio_input" name="views" value="2000">
+                                <span class="views__radio_span">1000-2000</span>
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset>
+                    <legend class="title__list">Comments</legend>
+                    <ul class="undotted comments_list title__list_span">
+                        <li>
+                            <label>
+                                <input type="checkbox" class="checkbox__input_comments" name="comments" value="0" checked>
+                                <span class="checkbox__span_comments">0</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" class="checkbox__input_comments" name="comments" value="10">
+                                <span class="checkbox__span_comments">0-10</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" class="checkbox__input_comments" name="comments" value="50">
+                                <span class="checkbox__span_comments">10-50</span>
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset>
+                    <legend class="title__list">How show?</legend>
+                    <ul class="views_list title__list_span undotted">
+                        <li>
+                            <label>
+                                <input type="radio" class="views__radio_input" name="show" value="show5" checked>
+                                <span class="views__radio_span">show 5</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" class="views__radio_input" name="show" value="show10">
+                                <span class="views__radio_span">show 10</span>
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset>
+                    <legend class="title__list">Sort by</legend>
+                    <ul class="views_list title__list_span undotted">
+                        <li>
+                            <label>
+                                <input type="radio" class="views__radio_input" name="sort" value="date" checked>
+                                <span class="views__radio_span">date</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" class="views__radio_input" value="title" name="sort">
+                                <span class="views__radio_span">title</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" class="views__radio_input" name="sort" value="views">
+                                <span class="views__radio_span">views</span>
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset class="tags">
+                    <legend class="title__list">Tags</legend>
+                    <ul class="tags__list undotted">
+                        <li>
+                            <label class="">
+                                <input type="checkbox" class="checkbox1__input_tags" name="tags" value="blue" checked>                                
+                                <span class="checkbox__span_tags1"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="">
+                                <input type="checkbox" class="checkbox2__input_tags" name="tags" value="lightblue">
+                                <span class="checkbox__span_tags2"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="">
+                                <input type="checkbox" class="checkbox3__input_tags" name="tags" value="yellow">
+                                <span class="checkbox__span_tags3"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="">
+                                <input type="checkbox" class="checkbox4__input_tags" name="tags" value="turquoise">
+                                <span class="checkbox__span_tags4"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="">
+                                <input type="checkbox" class="checkbox5__input_tags" name="tags" value="orange">
+                                <span class="checkbox__span_tags5"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="">
+                                <input type="checkbox" class="checkbox6__input_tags" checked name="tags" value="pink">
+                                <span class="checkbox__span_tags6"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="">
+                                <input type="checkbox" class="checkbox7__input_tags" name="tags" value="puple">
+                                <span class="checkbox__span_tags7"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="">
+                                <input type="checkbox" class="checkbox8__input_tags" name="tags" value="green">
+                                <span class="checkbox__span_tags8"></span>
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <button type="submit" class="button_search">Apply</button>
+            </form>
+
+            <div class="search2">
+                <form action="#" class="search2__form" name="linesearch">
+                    <div>
+                        <label>
+                            <span class="title_hidden">Search</span>
+                            <input type="search" class="search__input" name="text" value="">
+                        </label>
+                    </div>
+                <button type="submit" class="button_search button_search_dop">Search</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="blogpost">
+            <ul class="undotted">
+                @@include('blocks/posts.html',{
+                    "imgpost": "img/blog/posts/dog.webp",
+                    "color1": "img/blog/posts/color/orange.svg",
+                    "color2": "img/blog/posts/color/blu.svg",
+                    "color3": "",
+                    "date": "20.01.2020",
+                    "views": "223",
+                    "comments": "97",
+                    "titleText": "This is my new dog.",
+                    "text": "Duis sit odio dui pretium suspendisse malesuada sit leo in. Massa nec eget etiam tellus ac. Sodales nibh pellentesque donec eu ultrices tortor condimentum massa."
+                })
+                @@include('blocks/posts.html',{
+                    "imgpost": "img/blog/posts/chicken.webp",
+                    "color1": "img/blog/posts/color/green.svg",
+                    "color2": "img/blog/posts/color/blublu.svg",
+                    "color3": "",
+                    "date": "17.01.2020",
+                    "views": "12",
+                    "comments": "4",
+                    "titleText": "Why do roosters scream in the morning?",
+                    "text": "Erat nunc parturient feugiat egestas adipiscing erat eu. Non neque mi volutpat et lectus."
+                })
+                @@include('blocks/posts.html',{
+                    "imgpost": "img/blog/posts/kangaroo.webp",
+                    "color1": "img/blog/posts/color/blublack.svg",
+                    "color2": "",
+                    "color3": "",
+                    "date": "17.01.2020",
+                    "views": "337",
+                    "comments": "48",
+                    "titleText": "Kangaroo. Start.",
+                    "text": "At leo at nisl tortor egestas. Mauris luctus est luctus massa tellus erat gravida. Eget aenean eget diam habitant risus. Dapibus et, nec platea felis. Facilisi ut leo arcu, semper id pellentesque quisque ultrices etiam."
+                })
+                @@include('blocks/posts.html',{
+                    "imgpost": "img/blog/posts/duck.webp",
+                    "color1": "img/blog/posts/color/orange.svg",
+                    "color2": "img/blog/posts/color/green.svg",
+                    "color3": "img/blog/posts/color/blu.svg",
+                    "date": "15.01.2020",
+                    "views": "222",
+                    "comments": "67",
+                    "titleText": "Met a duckling at the pond.",
+                    "text": "Nulla tempus mauris sed vel bibendum. Felis urna suspendisse amet, laoreet sagittis. Semper pellentesque condimentum vitae morbi in dui. Et in et diam massa."
+                })
+                @@include('blocks/posts.html',{
+                    "imgpost": "img/blog/posts/dogs.webp",
+                    "color1": "img/blog/posts/color/pink.svg",
+                    "color2": "img/blog/posts/color/whiteblu.svg",
+                    "color3": "",
+                    "date": "20.01.2020",
+                    "views": "122",
+                    "comments": "27",
+                    "titleText": "Can dogs also be friends?",
+                    "text": "Eu, libero aliquet nibh turpis quis nulla et ullamcorper purus. Consequat egestas sed sagittis morbi lacus. Consectetur et justo, sagittis vitae mi faucibus urna, eu. "
+                })
+            </ul>
+
+            <div class="pagination_blog">
+                <button class="pagination_left"></button>
+                <div>
+                    <a href="blog.html" class="pagination_a checked_pagination">1</a>
+                    <a href="#" class="pagination_a">2</a>
+                    <a href="#" class="pagination_a">3</a>
+                    <a href="#" class="pagination_a">4</a>
+                    <a href="#" class="pagination_a">5</a>
+                </div>
+                <button class="pagination_right"></button>
+            </div>
+        </section>
+      
+    </main>
+
+    @@include('blocks/footer.html')
+
+    <script src="js/menu.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+</html>

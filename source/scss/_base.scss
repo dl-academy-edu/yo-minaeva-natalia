@@ -1,0 +1,30 @@
+html {
+  box-sizing: border-box;
+  text-size-adjust: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  font-family: 'Gilroy';
+  height: 100%;
+  margin: 0;
+  @include font;
+}
+
+a {
+  text-decoration: none;
+}
+.undotted {
+  list-style-type: none;
+}
+
+img {
+  display: block;
+}
