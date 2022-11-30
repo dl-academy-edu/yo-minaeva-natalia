@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="google" content="notranslate">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Natalia Minaeva</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <link rel="shortcut icon" href="img/favicon.png">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+  <body>
+
+    @@include('blocks/header.html')
+
+    <main>
+      <section class="basic-info container">
+        <div class="basic-info_name">
+          <h1 class="title_h1">Natalia Minaeva</h1>
+          <p class="basic-info_text">Future front-end developer 29 years old, Togliatti</p>
+        </div>
+
+        <div class="swiper-container image-slider swiper__div">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="slide__div">
+                <img src="img/slider/me.jpg" alt="" class="slide wide-pic">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide__div">
+                <img src="img/slider/me2.jpg" alt="" class="slide wide-pic">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide__div">
+                <img src="img/slider/me3.jpg" alt="" class="slide wide-pic">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide__div">
+                <img src="img/slider/me4.jpg" alt="" class="slide wide-pic">
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper__div_btn">
+            <div class="custom-prev"></div>
+            <div class="custom-next"></div>
+          </div>
+          <div class="swiper-pagination item_pagination div_pagination"></div>
+        </div>
+      </section>
+
+      <section class="about-me">
+        <div class="container">
+          <h2 class="title_h2">About me</h2>
+        <div class="about-me__img">
+          <img src="img/index/about1.jpg" alt="" class="about-me__img1">
+          <img src="img/index/about2.jpg" alt="" class="about-me__img2">
+          <img src="img/index/about3.jpg" alt="" class="about-me__img3">
+        </div>
+        </div>
+      </section>
+
+      <section class="about-me-mobile">
+        <div class="container">
+          <h2 class="title_h2">About me</h2>
+        <div class="about-me-mobile__img">
+          <img src="img/index/aboutMob1.jpg" alt="" class="about-me-mobile__img1">
+          <img src="img/index/aboutMob2.jpg" alt="" class="about-me-mobile__img2">
+          <img src="img/index/aboutMob3.jpg" alt="" class="about-me-mobile__img3">
+        </div>
+        </div>
+      </section>
+
+      <section class="skills">
+        <div class="container">
+          <h2 class="title__h2">Skills</h2>
+        <p class="skills__text">I work in such programs as</p>
+        <div class="skills__img">
+          <img src="img/index/skills/html5.png" alt="" class="skills__img_1">
+          <img src="img/index/skills/css-scss.png" alt="" class="skills__img_2">
+          <img src="img/index/skills/javaScript.png" alt="" class="skills__img_3">
+          <img src="img/index/skills/git-github.png" alt="" class="skills__img_4">
+          <img src="img/index/skills/figma.png" alt="" class="skills__img_5">
+        </div>
+        </div>
+      </section>
+
+      <section class="portfolio">
+        <div class="container">
+          <h2 class="title__h2">Portfolio</h2>
+
+          <div class="swiper-container image-slider swiper__div">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slide__div">
+                  <img src="img/slider2/screen1.jpg" alt="" class="slide">
+                  <img src="img/slider2/screen2.jpg" alt="" class="slide1000">
+                  <img src="img/slider2/screen3.jpg" alt="" class="slide300">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide__div">
+                  <img src="img/slider2/meee.jpg" alt="" class="slide wide-pic">
+                  <img src="img/slider2/meee.jpg" alt="" class="slide1000">
+                  <img src="img/slider2/meee.jpg" alt="" class="slide300">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide__div">
+                  <img src="img/slider2/kitty.jpg" alt="" class="slide wide-pic">
+                  <img src="img/slider2/kitty.jpg" alt="" class="slide1000">
+                  <img src="img/slider2/kitty.jpg" alt="" class="slide300">
+                </div>
+              </div>
+            </div>
+  
+            <div class="swiper__div_btn">
+              <div class="custom-prev"></div>
+              <div class="custom-next"></div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+    </main>
+
+    @@include('blocks/footer.html')
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/menu.js"></script>
+  </body>
+</html>

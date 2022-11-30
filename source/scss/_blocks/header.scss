@@ -1,0 +1,137 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 33px;
+    padding-bottom: 33px;
+    border-bottom: solid 1px #828282;
+}
+.header_menu {
+    display: flex;
+}
+
+.header_home {
+    float: left;
+}
+
+.header a {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #070707;
+    text-decoration: none;
+}
+
+.header_menu {
+    margin-left: auto;
+    right: 0;
+}
+
+.header_menu li {
+    margin-left: 20px;
+}
+
+.header_menu a, .header_menu button {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #828282;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.header-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(246, 246, 246, 0.99);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    padding-top: 50%;
+    display: none;
+    z-index: 5;
+    &__open {
+        display: block;
+    }
+    &__closeBlock{
+        position: relative;
+    }
+    &__close {
+        position: absolute;
+        display: block;
+        right: 6%;
+        margin-top: -40%;
+    }
+}
+
+.humburger {
+    display: none;
+}
+
+.header-mobile a {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 41px;
+    color: #070707;
+    text-decoration: none;
+    padding-right: 20px;
+}
+
+.header-mobile_menu a, .header-mobile_menu button {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 41px;
+    color: #828282;
+    border: 0;
+    background-color: transparent;
+}
+
+.header-mobile_menu button {
+    margin-right: 20px;
+}
+
+.header-mobile_menu li {
+    margin-bottom: 35px;
+}
+
+.header-mobile_menu li:nth-child(1) {
+    margin-top: 35px;
+}
+
+.div_humburger {
+    display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+    .header {
+        display: none;
+    }
+    
+    .humburger {
+        display: block;
+        position: absolute;
+        width: 32px;
+        height: 20px;
+        right: 0;
+        margin-top: 50px;
+        background-color: transparent;
+
+    }
+
+    .div_humburger {
+        display: block;
+        position: relative;
+        width: 300px;
+        top: 0;
+    }
+}

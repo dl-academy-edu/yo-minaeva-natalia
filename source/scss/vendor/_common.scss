@@ -1,0 +1,40 @@
+%content {content: ''; display: block; position: absolute}
+
+.title_hidden {
+    width: 0;
+    height: 0;
+    font-size: 0;
+    margin: 0;
+    padding: 0; 
+    line-height: 0;
+}
+
+.undotted {
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    font-family: 'Montserrat';
+}
+
+.title {
+    font-weight: 700;
+    font-size: 47px;
+    line-height: 57px;
+    color: #070707;
+    &__h2 {
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 41px;
+        text-align: center;
+        color: #070707;
+    }
+    &__list {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #070707;
+    }
+}
